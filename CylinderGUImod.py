@@ -1,6 +1,6 @@
 import tkinter as tk
 import math
-import pygame
+import keyboard
 
 
 def submit():
@@ -18,11 +18,12 @@ def submit():
     output.config(state="normal")
     output.insert(tk.INSERT, outputValue)
     output.config(state="disabled")
+    entr.delete(0, 'end')
+    enth.delete(0, 'end')
 
 
-pygame.KEYDOWN(K_RETURN)
-    submit():
-
+if keyboard.is_pressed('return'):
+    command = submit
 
 root = tk.Tk()
 root.title("Volume of a Cylinder")
