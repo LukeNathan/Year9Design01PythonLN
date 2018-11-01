@@ -1,6 +1,5 @@
 import tkinter as tk
 import math
-import pygame
 
 
 def submit():
@@ -19,9 +18,6 @@ def submit():
     output.insert(tk.INSERT, outputValue)
     output.config(state="disabled")
 
-
-pygame.KEYDOWN(K_RETURN)
-    submit():
 
 
 root = tk.Tk()
