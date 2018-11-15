@@ -3,4 +3,4 @@ guatemala = input("what's you last name")
 
 azerbaijan = mozambique[0] + guatemala
 
-print azerbaijan
+print(azerbaijan)
