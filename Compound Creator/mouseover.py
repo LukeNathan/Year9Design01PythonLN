@@ -4,11 +4,17 @@ root = tk.Tk()
 
 
 def show(event):
-    print("Entered")
+    ent = tk.Label(root, text="Entered")
+    ent.pack()
+    if ent.winfo_exists() == True:
+        ent.destroy()
+    ent = tk.Label(root, text="Entered")
+    ent.pack()
 
 
 def unshow(event):
-    print("exited")
+    ex = tk.Label(root, text="Exited")
+    ex.pack()
 
 
 button = tk.Button(text="hi")

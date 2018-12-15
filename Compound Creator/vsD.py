@@ -1,10 +1,11 @@
-# pre alpha 0.2.11.2.0.1
+# alpha 1.0.4
 
 import tkinter as tk
 import random
 
 root = tk.Tk()
-root.geometry("1000x500")
+root.geometry("750x500")
+root.title("Compound Creator")
 
 name = tk.StringVar()
 nameLabel = tk.Label(root, textvariable=name)
@@ -33,6 +34,83 @@ def exit(event):
 
 def type(event):
     box.set(box.get() + event.widget["text"])
+    h1 = tk.Button(root, text="1", command=t1)
+    h1.grid(row=5, column=30)
+    h2 = tk.Button(root, text="2", command=t2)
+    h2.grid(row=6, column=30)
+    h3 = tk.Button(root, text="3", command=t3)
+    h3.grid(row=7, column=30)
+    h4 = tk.Button(root, text="4", command=t4)
+    h4.grid(row=5, column=31)
+    h5 = tk.Button(root, text="5", command=t5)
+    h5.grid(row=6, column=31)
+    h6 = tk.Button(root, text="6", command=t6)
+    h6.grid(row=7, column=31)
+    h7 = tk.Button(root, text="7", command=t7)
+    h7.grid(row=5, column=32)
+    h8 = tk.Button(root, text="8", command=t8)
+    h8.grid(row=6, column=32)
+    h9 = tk.Button(root, text="9", command=t9)
+    h9.grid(row=7, column=32)
+
+
+got = entr.get()
+
+
+def submitc():
+    print(entr.get())
+    if entr.get() == "H2O":
+        print("water")
+        waterl = tk.Label(root, text="Water")
+        waterl.grid(row=3, column=16, columnspan=5)
+    if entr.get() == "CO2":
+        print("carbon dioxide")
+        carbl = tk.Label(root, text="Carbon Dioxide")
+        carbl.grid(row=3, column=16, columnspan=5)
+    if entr.get() == "C6H12O6":
+        glucl = tk.Label(root, text="Glucose")
+        glucl.grid(row=3, column=16, columnspan=5)
+    if entr.get() == "C6H8O7":
+        print("citric acid")
+        citrl = tk.Label(root, text="Citric Acid")
+        citrl.grid(row=3, column=16, columnspan=5)
+    box.set("")
+
+
+def t1():
+    box.set(box.get() + "1")
+
+
+def t2():
+    box.set(box.get() + "2")
+
+
+def t3():
+    box.set(box.get() + "3")
+
+
+def t4():
+    box.set(box.get() + "4")
+
+
+def t5():
+    box.set(box.get() + "5")
+
+
+def t6():
+    box.set(box.get() + "6")
+
+
+def t7():
+    box.set(box.get() + "7")
+
+
+def t8():
+    box.set(box.get() + "8")
+
+
+def t9():
+    box.set(box.get() + "9")
 
 
 def clear():
@@ -54,7 +132,6 @@ def word():
 
 
 def collapse():
-    print("Test")
     nextb.grid_remove()
     prevb.grid_remove()
     randb.grid_remove()
@@ -163,7 +240,7 @@ clearb = tk.Button(root, command=clear, text="Clear")
 clearb.grid(row=19, column=29, columnspan=3)
 clearb.config(height=1, width=5)
 
-submitb = tk.Button(root, text="Submit")
+submitb = tk.Button(root, text="Submit", command=submitc)
 submitb.grid(row=20, column=29, columnspan=3)
 submitb.config(height=1, width=5)
 
@@ -177,7 +254,7 @@ elementList = [
     "Sb", "Te", "I", "Xe", "Cs", "Ba", "La", "Ce", "Pr", "Nd",  # 60
     "Pm", "Sm", "Eu", "Gd", "Tb", "Dy", "Ho", "Er", "Tm", "Yb",  # 70
     "Lu", "Hf", "Ta", "W", "Re", "Os", "Ir", "Pt", "Au", "Hg",  # 80
-    "Ti", "Pb", "Bi", "Po", "At", "Rn", "Cs", "Fr", "Ra", "Ac",  # 90
+    "Tl", "Pb", "Bi", "Po", "At", "Rn", "Cs", "Fr", "Ra", "Ac",  # 90
     "Th", "Pa", "U", "Np", "Pu", "Am", "Cm", "Bk", "Cf", "Es",  # 100
     "Fm", "Md", "No", "Lr", "Rf", "Db", "Sg", "Bh", "Hs", "Mt",  # 110
     "Ds", "Rg", "Cn", "Nh", "Fl", "Mc", "Lv", "Ts", "Og"]  # 120
