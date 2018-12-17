@@ -1,4 +1,3 @@
-# alpha 1.0.4
 
 import tkinter as tk
 import random
@@ -54,9 +53,6 @@ def type(event):
     h9.grid(row=7, column=32)
 
 
-got = entr.get()
-
-
 def submitc():
     print(entr.get())
     if entr.get() == "H2O":
@@ -73,6 +69,10 @@ def submitc():
     if entr.get() == "C6H8O7":
         print("citric acid")
         citrl = tk.Label(root, text="Citric Acid")
+        citrl.grid(row=3, column=16, columnspan=5)
+    if entr.get() == "NH3":
+        print("ammonia")
+        citrl = tk.Label(root, text="Ammonia")
         citrl.grid(row=3, column=16, columnspan=5)
     box.set("")
 
