@@ -1,4 +1,4 @@
-
+# alpha 1.02.2
 import tkinter as tk
 import random
 
@@ -36,21 +36,23 @@ def type(event):
     h1 = tk.Button(root, text="1", command=t1)
     h1.grid(row=5, column=30)
     h2 = tk.Button(root, text="2", command=t2)
-    h2.grid(row=6, column=30)
+    h2.grid(row=5, column=31)
     h3 = tk.Button(root, text="3", command=t3)
-    h3.grid(row=7, column=30)
+    h3.grid(row=5, column=32)
     h4 = tk.Button(root, text="4", command=t4)
-    h4.grid(row=5, column=31)
+    h4.grid(row=6, column=30)
     h5 = tk.Button(root, text="5", command=t5)
     h5.grid(row=6, column=31)
     h6 = tk.Button(root, text="6", command=t6)
-    h6.grid(row=7, column=31)
+    h6.grid(row=6, column=32)
     h7 = tk.Button(root, text="7", command=t7)
-    h7.grid(row=5, column=32)
+    h7.grid(row=7, column=30)
     h8 = tk.Button(root, text="8", command=t8)
-    h8.grid(row=6, column=32)
+    h8.grid(row=7, column=31)
     h9 = tk.Button(root, text="9", command=t9)
     h9.grid(row=7, column=32)
+    h0 = tk.Button(root, text="0", command=t0)
+    h0.grid(row=8, column=31)
 
 
 def submitc():
@@ -58,22 +60,133 @@ def submitc():
     if entr.get() == "H2O":
         print("water")
         waterl = tk.Label(root, text="Water")
+        citrl = tk.Label(root, text="")
         waterl.grid(row=3, column=16, columnspan=5)
     if entr.get() == "CO2":
         print("carbon dioxide")
         carbl = tk.Label(root, text="Carbon Dioxide")
+        citrl = tk.Label(root, text="")
         carbl.grid(row=3, column=16, columnspan=5)
     if entr.get() == "C6H12O6":
         glucl = tk.Label(root, text="Glucose")
+        citrl = tk.Label(root, text="")
         glucl.grid(row=3, column=16, columnspan=5)
     if entr.get() == "C6H8O7":
         print("citric acid")
         citrl = tk.Label(root, text="Citric Acid")
+        citrl = tk.Label(root, text="")
         citrl.grid(row=3, column=16, columnspan=5)
     if entr.get() == "NH3":
         print("ammonia")
         citrl = tk.Label(root, text="Ammonia")
+        citrl = tk.Label(root, text="")
         citrl.grid(row=3, column=16, columnspan=5)
+    if entr.get() == "CHCl3":
+        print("chloroform")
+        citrl = tk.Label(root, text="Chloroform")
+        citrl = tk.Label(root, text="")
+        citrl.grid(row=3, column=16, columnspan=5)
+    if entr.get() == "C3H8O3":
+        print("glycerol")
+        citrl = tk.Label(root, text="Glycerol")
+        citrl = tk.Label(root, text="")
+        citrl.grid(row=3, column=16, columnspan=5)
+    if entr.get() == "N2H4":
+        print("hydrazine")
+        citrl = tk.Label(root, text="Hydrazine")
+        citrl = tk.Label(root, text="")
+        citrl.grid(row=3, column=16, columnspan=5)
+    if entr.get() == "HIO3":
+        print("iodic acid")
+        citrl = tk.Label(root, text="Iodic Acid")
+        citrl = tk.Label(root, text="")
+        citrl.grid(row=3, column=16, columnspan=5)
+    if entr.get() == "C12H22O11":
+        print("lactose")
+        citrl = tk.Label(root, text="Lactose")
+        citrl = tk.Label(root, text="")
+        citrl.grid(row=3, column=16, columnspan=5)
+    if entr.get() == "C6H14O6":
+        print("mannitol")
+        citrl = tk.Label(root, text="Mannitol")
+        citrl = tk.Label(root, text="")
+        citrl.grid(row=3, column=16, columnspan=5)
+    if entr.get() == "CH3OH":
+        print("methanol")
+        citrl = tk.Label(root, text="Methanol")
+        citrl = tk.Label(root, text="")
+        citrl.grid(row=3, column=16, columnspan=5)
+    if entr.get() == "C10H14N2":
+        print("nicotine")
+        citrl = tk.Label(root, text="Nicotine")
+        citrl = tk.Label(root, text="")
+        citrl.grid(row=3, column=16, columnspan=5)
+    if entr.get() == "C6H6O":
+        print("phenol")
+        citrl = tk.Label(root, text="Phenol")
+        citrl = tk.Label(root, text="")
+        citrl.grid(row=3, column=16, columnspan=5)
+    if entr.get() == "C5H5N":
+        print("pyridine")
+        citrl = tk.Label(root, text="Pyridine")
+        citrl = tk.Label(root, text="")
+        citrl.grid(row=3, column=16, columnspan=5)
+    if entr.get() == "C6H6O2":
+        print("resorcinol")
+        citrl = tk.Label(root, text="Resorcinol")
+        citrl = tk.Label(root, text="")
+        citrl.grid(row=3, column=16, columnspan=5)
+    if entr.get() == "CH4N2S":
+        print("thiourea")
+        citrl = tk.Label(root, text="Thiourea")
+        citrl = tk.Label(root, text="")
+        citrl.grid(row=3, column=16, columnspan=5)
+    if entr.get() == "C2H5OH":
+        print("ethanol")
+        citrl = tk.Label(root, text="Ethanol")
+        citrl = tk.Label(root, text="")
+        citrl.grid(row=3, column=16, columnspan=5)
+    if entr.get() == "CH4":
+        print("methane")
+        citrl = tk.Label(root, text="Methane")
+        citrl = tk.Label(root, text="")
+        citrl.grid(row=3, column=16, columnspan=5)
+    if entr.get() == "C6H6":
+        print("benzene")
+        citrl = tk.Label(root, text="Benzene")
+        citrl = tk.Label(root, text="")
+        citrl.grid(row=3, column=16, columnspan=5)
+    if entr.get() == "C2H4O":
+        print("acetaldehyde")
+        citrl = tk.Label(root, text="Acetaldehyde")
+        citrl = tk.Label(root, text="")
+        citrl.grid(row=3, column=16, columnspan=5)
+    if entr.get() == "O3":
+        print("ozone")
+        citrl = tk.Label(root, text="Ozone")
+        citrl = tk.Label(root, text="")
+        citrl.grid(row=3, column=16, columnspan=5)
+    if entr.get() == "SO2":
+        print("sulfur dioxide")
+        citrl = tk.Label(root, text="Sulfur Dioxide")
+        citrl = tk.Label(root, text="")
+        citrl.grid(row=3, column=16, columnspan=5)
+    if entr.get() == "CO":
+        print("carbon monoxide")
+        citrl = tk.Label(root, text="Carbon Monoxide")
+        citrl = tk.Label(root, text="")
+        citrl.grid(row=3, column=16, columnspan=5)
+    if entr.get() == "NO2":
+        print("nitrogen dioxide")
+        citrl = tk.Label(root, text="Nitrogen Dioxide")
+        citrl = tk.Label(root, text="")
+        citrl.grid(row=3, column=16, columnspan=5)
+    if entr.get() == "CO":
+        print("carbon monoxide")
+        citrl = tk.Label(root, text="Carbon Monoxide")
+        citrl = tk.Label(root, text="")
+        citrl.grid(row=3, column=16, columnspan=5)
+        print(entr.get())
     box.set("")
 
 
@@ -111,6 +224,10 @@ def t8():
 
 def t9():
     box.set(box.get() + "9")
+
+
+def t0():
+    box.set(box.get() + "0")
 
 
 def clear():
